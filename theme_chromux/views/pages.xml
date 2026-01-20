@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="chromux_page" model="website.page">
+        <field name="name">Chromux Home</field>
+        <field name="url">/chromux</field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_chromux.chromux_homepage</field>
+        <field name="arch" type="xml">
+            <t name="Chromux Homepage" t-name="theme_chromux.chromux_homepage">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure">
+                        <!-- Google Fonts -->
+                        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+                        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+                        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;display=swap" rel="stylesheet"/>
+
+                        <!-- Original Body Content -->
+                        <div class="background-grid"></div>
+                        <div class="overlay"></div>
+
+                        <nav class="navbar">
+                            <div class="logo">CHROMUX</div>
+                            <ul class="nav-links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#privacy">Privacy</a></li>
+                                <li><a href="#media">Media</a></li>
+                                <li><a href="#download" class="btn-glow-small">Download</a></li>
+                            </ul>
+                        </nav>
+
+                        <header id="home" class="hero">
+                            <div class="hero-content">
+                                <h1 class="glitch" data-text="Browse Beyond Limits">Browse Beyond Limits</h1>
+                                <p class="subtitle">Speed, Security, and a Pro-Grade Media Player. The all-in-one browser for the future.
+                                </p>
+                                <div class="cta-buttons">
+                                    <a href="#download" class="btn-primary">Get Chromux <span class="shine"></span></a>
+                                    <a href="#features" class="btn-secondary">Explore Features</a>
+                                </div>
+                            </div>
+                            <div class="hero-visual">
+                                <div class="sphere">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                    <div class="core-logo"></div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <section id="features" class="features">
+                            <h2 class="section-title">Core Capabilities</h2>
+                            <div class="feature-grid">
+                                <div class="feature-card glass">
+                                    <div class="icon-box">⚡</div>
+                                    <h3>Ad-Free Velocity</h3>
+                                    <p>Native <strong>AdBlocker</strong> technology eliminates clutter, tracking scripts, and popups.
+                                        Experience the web at lightning speed.</p>
+                                </div>
+                                <div class="feature-card glass">
+                                    <div class="icon-box">📰</div>
+                                    <h3>Smart News Feed</h3>
+                                    <p>Stay ahead with a built-in, customizable <strong>RSS News Reader</strong>. Breaking headlines from
+                                        around the globe, delivered instantly to your dashboard.</p>
+                                </div>
+                                <div class="feature-card glass">
+                                    <div class="icon-box">⬇️</div>
+                                    <h3>Power Downloads</h3>
+                                    <p>Advanced <strong>Download Manager</strong> with pause/resume support and background data sync
+                                        service.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="media" class="features">
+                            <h2 class="section-title">Media Powerhouse</h2>
+                            <div class="split-section">
+                                <div class="text-content">
+                                    <h3>Cinema in Your Pocket</h3>
+                                    <p>Chromux isn't just a browser; it's a pro-grade media player.</p>
+                                    <ul class="duties-list">
+                                        <li><strong>Gesture Controls:</strong> Swipe for Volume & Brightness.</li>
+                                        <li><strong>Subtitle Engine:</strong> Full support for .srt and external subs.</li>
+                                        <li><strong>Speed Control:</strong> Watch content at 0.5x to 4x speed.</li>
+                                        <li><strong>Background Play:</strong> Keep audio running while you multitask.</li>
+                                    </ul>
+                                </div>
+                                <div class="visual-content glass-panel-mini">
+                                    <div class="icon-box-large">▶️</div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="privacy" class="features">
+                            <h2 class="section-title">Fortress Security</h2>
+                            <div class="feature-grid">
+                                <div class="feature-card glass">
+                                    <div class="icon-box">🕵️</div>
+                                    <h3>True Incognito</h3>
+                                    <p>Your data vanishes when you close the tab. No history, no cookies, no trace.</p>
+                                </div>
+                                <div class="feature-card glass">
+                                    <div class="icon-box">🖥️</div>
+                                    <h3>Desktop Mode</h3>
+                                    <p>View full desktop versions of websites with a single tap. Experience the web exactly as intended on
+                                        larger screens.</p>
+                                </div>
+                                <div class="feature-card glass">
+                                    <div class="icon-box">🛡️</div>
+                                    <h3>Security Manager</h3>
+                                    <p>Real-time threat detection blocks malicious sites before they load.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="tech-specs" class="specs-section">
+                            <div class="specs-container glass">
+                                <h3>Under the Hood</h3>
+                                <div class="specs-grid">
+                                    <div class="spec-item">
+                                        <span>Kotlin</span>
+                                        <div class="bar">
+                                            <div class="fill k-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span>Rendering</span>
+                                        <div class="bar">
+                                            <div class="fill r-fill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span>Security</span>
+                                        <div class="bar">
+                                            <div class="fill s-fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="specs-details">Built with modern Android Architecture Components for maximum stability.</p>
+                            </div>
+                        </section>
+
+                        <section id="download" class="download-section">
+                            <div class="glass-panel">
+                                <h2>Ready to Upgrade?</h2>
+                                <p>Join the revolution. Fast, Secure, and Media-Rich.</p>
+                                <div class="download-options">
+                                    <button class="btn-mega">
+                                        <span class="btn-icon">🤖</span> Download APK
+                                        <span class="version">v1.2.0 Stable</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <footer>
+                            <p>&copy; 2025 Chromux Browser. Codebase: Kotlin/Android. <br/> Maintained by Advanced Agentic Coding.</p>
+                        </footer>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>
