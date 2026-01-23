@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (!ticking) {
             window.requestAnimationFrame(() => {
-                // Parallax
-                if (backgroundGrid) {
+                // Parallax (Only on Desktop for Performance)
+                if (backgroundGrid && window.innerWidth > 768) {
                     const scrollY = window.scrollY;
                     backgroundGrid.style.transform = `perspective(500px) rotateX(60deg) translateY(${scrollY * 0.5}px) translateZ(-200px)`;
                 }
