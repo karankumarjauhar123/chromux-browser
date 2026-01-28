@@ -123,7 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLinks.style.top = '70px';
                 navLinks.style.left = '0';
                 navLinks.style.width = '100%';
-                navLinks.style.background = 'rgba(5, 5, 16, 0.95)';
+                navLinks.style.background = 'rgba(5, 5, 20, 0.9)'; /* Slightly transparent */
+                navLinks.style.backdropFilter = 'blur(15px)'; /* Glass effect */
+                navLinks.style.webkitBackdropFilter = 'blur(15px)';
                 navLinks.style.padding = '2rem';
                 navLinks.style.borderBottom = '1px solid var(--glass-border)';
             }
